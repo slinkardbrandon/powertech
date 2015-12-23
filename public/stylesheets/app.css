@@ -178,6 +178,8 @@ html, body {
   .footer-basic-centered .footer-links a {
     line-height: 1.8; } }
 /*---------End Footer----------------*/
+.powered-by {
+  padding-top: 20px; }
 
 
 /*# sourceMappingURL=app.css.map*/
