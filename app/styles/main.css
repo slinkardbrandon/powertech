@@ -17,9 +17,11 @@ body {
 
 /* IMAGES -------------------- */
 .ptr-logo {
-    height: 200px;
     padding: 20px;
-    background-image:url( "./images/powertech-logo.png" );
+    width:200px; /* you can use % */
+    height: 200px;
+    /*height: auto;*/
+    background-image:url( "../images/powertech-logo.png" );
 }
 
 
