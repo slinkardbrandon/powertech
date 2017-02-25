@@ -1,0 +1,232 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+.center-block {
+    float: none
+}
+
+* {
+    margin: 0;
+}
+
+/* IMAGES -------------------- */
+.ptr-logo {
+    height: 200px;
+    padding: 20px;
+    background-image:url( "./images/powertech-logo.png" );
+}
+
+
+
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
+}
+
+#homeimage {
+    margin-bottom: 20px !important;
+    max-height: 600px !important;
+    width: 100% !important;
+
+    -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+    -moz-transform: rotate(180deg);        /* FF */
+    -o-transform: rotate(180deg);          /* Opera */
+    -ms-transform: rotate(180deg);         /* IE9 */
+    transform: rotate(180deg);             /* W3C compliant browsers */
+
+    /* IE8 and below */
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=0, M21=0, M22=-1, DX=0, DY=0, SizingMethod='auto expand');
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+}
+
+/*---------Footer--------------*/
+.footer-basic-centered{
+    background-color: #292c2f;
+//background-color: #323;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font: normal 18px sans-serif;
+
+    padding: 25px;
+    margin-top: 80px;
+}
+
+.footer-basic-centered .footer-company-motto{
+    color:  #8d9093;
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-basic-centered .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-basic-centered .footer-links{
+    list-style: none;
+    font-weight: bold;
+    color:  #ffffff;
+    padding: 15px 0 23px;
+    margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+    display:inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+    .footer-basic-centered{
+        padding: 20px;
+    }
+
+    .footer-basic-centered .footer-company-motto{
+        font-size: 12px;
+    }
+
+    .footer-basic-centered .footer-company-name{
+        font-size: 12px;
+    }
+
+    .footer-basic-centered .footer-links{
+        font-size: 14px;
+        padding: 20px 0 20px;
+    }
+
+    .footer-basic-centered .footer-links a{
+        line-height: 1.8;
+    }
+}
+/*---------End Footer----------------*/
+
+.powered-by {
+    padding-top: 20px;
+}

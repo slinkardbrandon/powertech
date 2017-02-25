@@ -12,7 +12,8 @@
     "node": "~0.6.10"
   },
   "scripts": {
-    "start": "brunch watch --server"
+    "start": "brunch watch --server",
+    "build": "brunch b -p --env production"
   },
   "dependencies": {
     "javascript-brunch": ">= 1.0 < 1.4",
